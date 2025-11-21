@@ -9,18 +9,16 @@ const prakritiRoutes = require('./routes/prakriti');
 const app = express();
 
 // MongoDB Connection
-// mongoose.connect('mongodb://localhost:27017/ayurbot');
-mongoose.connect('mongodb://localhost:27017/ayurbot', {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-})
+mongoose.connect(
+    "mongodb+srv://singhamisha1572_db_user:IOpIwQQ4VJR8Lk6M@cluster0.afue09e.mongodb.net/ayurbot?retryWrites=true&w=majority&appName=Cluster0"
+)
 .then(() => {
-    console.log('Successfully connected to DB');
+    console.log("Connected to MongoDB Atlas");
 })
 .catch(err => {
-    console.error('DB connection error:', err.message);
-    process.exit(1);
+    console.error("Atlas DB connection error:", err.message);
 });
+
 
 
 
