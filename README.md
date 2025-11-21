@@ -4,6 +4,8 @@
 [![Express](https://img.shields.io/badge/Express-4.x-lightgrey)](https://expressjs.com/)
 [![MongoDB](https://img.shields.io/badge/MongoDB-6.x-green)](https://www.mongodb.com/)
 
+# DEMO LINK- > https://prakriticheck-1.onrender.com 
+
 PrakritiCheck is a web application that helps users identify their Ayurvedic Prakriti (body constitution) through a carefully designed questionnaire. Based on ancient Ayurvedic principles, the system analyzes user responses to determine their dominant dosha (Vata, Pitta, or Kapha) and provides personalized recommendations.
 
 ![Ayurbot Screenshot](/public/Ayurbot_Screenshot.png) <!-- Add actual screenshot path -->
