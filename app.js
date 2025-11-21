@@ -10,8 +10,7 @@ const app = express();
 
 // MongoDB Connection
 mongoose.connect(
-    "mongodb+srv://singhamisha1572_db_user:IOpIwQQ4VJR8Lk6M@cluster0.afue09e.mongodb.net/ayurbot?retryWrites=true&w=majority&appName=Cluster0"
-)
+   (process.env.MONGO_URI)
 .then(() => {
     console.log("Connected to MongoDB Atlas");
 })
