@@ -1,3 +1,4 @@
+require("dotenv").config();  
 const express = require('express');
 const mongoose = require('mongoose');
 const session = require('express-session');
@@ -9,8 +10,7 @@ const prakritiRoutes = require('./routes/prakriti');
 const app = express();
 
 // MongoDB Connection
-mongoose.connect(
-   (process.env.MONGO_URI)
+mongoose.connect(process.env.MONGO_URI)
 .then(() => {
     console.log("Connected to MongoDB Atlas");
 })
